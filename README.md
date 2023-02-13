@@ -53,6 +53,13 @@ go build -o blockchain *.go
 
 ![createwallet](assets/createwallet.gif)
 
+在go1.19.4 上执行失败，错误信息如下：
+创建钱包命令被调用!
+decoder.Decode err: gob: name not registered for interface: "crypto/elliptic.p256Curve"
+createWallet失败!
+
+在go.18.10上可以执行成功。
+
 ## 打印钱包
 
 ```sh
